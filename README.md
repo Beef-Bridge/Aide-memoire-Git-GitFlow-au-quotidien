@@ -56,8 +56,7 @@ $ git push
 ```
 Désormais la branche de mon développement se retrouve fusionnée dans la branche `develop` et elle a été automatiquement supprimée.
 
-
-W> !!! Attention : après avoir fermé ma feature, la branche est supprimée donc je suis automatiquement basculer sur ma branche develop.
+Attention : après avoir fermé ma feature, la branche est supprimée donc je suis automatiquement basculer sur ma branche develop.
 
 ## Bonus
 Si mon développement dure plus longtemps que prévu et que la branche `develop` évolue rapidement avec les développements de mes collègues, je peux mettre à jour la branche de ma feature en récupérant leurs travaux.
