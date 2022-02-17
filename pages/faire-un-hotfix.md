@@ -1,6 +1,6 @@
 # Faire un hotfix
 
-Si aucun développement n'est commencé, alors on doit d'abord créer la branche du hotfix (comme indiquer après ci-dessous).
+Si aucun développement n'est commencé, alors je dois d'abord créer la branche du hotfix (comme indiquer après ci-dessous).
 
 
 
@@ -19,7 +19,7 @@ $ git pull --rebase
 ```sh
 $ git checkout -b hotfix_avec_un_joli_nom
 ```
-3. Ecrire le code du hotfix ou récupérer du code précédement écris et mis de coté avec la commande `stash` :
+3. Ecrire le code du hotfix ou récupérer du code précédement écrit et mis de coté avec la commande `stash` :
 ```sh
 # Récupère le code que l'on a mis de coté précédemment
 $ git stash pop
