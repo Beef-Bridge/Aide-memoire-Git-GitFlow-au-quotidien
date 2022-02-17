@@ -15,7 +15,7 @@ Si aucun développement n'est commencé, alors je dois d'abord créer la branche
 $ git checkout master
 $ git pull --rebase
 ```
-2. Créer la branche du hotfix: 
+2. Créer la branche du hotfix depuis la branche `master` : 
 ```sh
 $ git checkout -b hotfix_avec_un_joli_nom
 ```
