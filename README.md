@@ -2,6 +2,10 @@
 
 Mon petit aide-mémoire pour l'utilisation de Git/GitFlow au quotidien.
 
+## Sommaire
+* [Effectuer une livraison en production](pages/effectuer-une-livraison-en-production.md)
+* [Faire un hotfix](pages/faire-un-hotfix.md)
+
 
 ## Démarrage d'un projet
 
