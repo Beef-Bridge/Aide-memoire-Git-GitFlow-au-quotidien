@@ -46,6 +46,6 @@ $ git push
    * les commits de la release apparaissent dans l'historique de la branche `develop`
    * les commits de la release apparaissent dans l'historique de la branche `master`
 
-8. Il reste à créer le tag correspondant au numéro de version que l'on souhaite publier sur notre environnement de production.
+8. Il reste à créer le tag correspondant au numéro de version que je souhaite publier sur l'environnement de production.
 
 9. Effectuer la livraison du package de ce tag.
