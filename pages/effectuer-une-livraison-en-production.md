@@ -1,12 +1,12 @@
 # Effectuer une livraison en production
 
-1. S'assurer que sa branche locale `develop` est bien à jour :
+1. S'assurer que la branche locale `develop` est bien à jour :
 ```sh
 $ git checkout develop # si nécéssaire
 $ git pull --rebase
 ```
 
-2. S'assurer que sa branche locale `master` est bien à jour :
+2. S'assurer que la branche locale `master` est bien à jour, elle aussi :
 ```sh
 $ git checkout master # si nécéssaire
 $ git pull --rebase
@@ -23,12 +23,12 @@ $ git pull --rebase
 $ git flow release finish #NOM_RELEASE
 ```
 
-Après la clôture de la branche `release`, on est replacé sur notre branche locale `develop`.
+Après la clôture de la branche `release`, je suis replacé sur ma branche locale `develop`.
 
 Le merge est envoyé dans les branches locales `develop` et `master`. **Il est donc impératif de les publier vers leur dépot distant correspondant !**
 
-5. Publier le merge de la `release` vers la branche `develop` du dépot distant :
-S'assurer que l'on est bien sur notre branche locale `develop` !
+5. Publier le merge de la `release` vers la branche `develop` du dépot distant : 
+m'assurer que je suis bien sur la branche locale `develop` !
 
 ```sh
 $ git checkout develop # si nécéssaire
