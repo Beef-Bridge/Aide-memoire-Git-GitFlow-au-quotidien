@@ -2,7 +2,7 @@
 
 ## Principe
 
-Une fois que ma branche `develop` a acquis assez de fonctionnalités en vue d'une livraison (ou qu'une date de livraison prédéfinie approche), je créée une branche de livraison (_release_) à partir de `develop`.
+Une fois que ma branche `develop` a acquis assez de fonctionnalités en vue d'une livraison (ou qu'une date de livraison prédéfinie approche), je créé une branche de livraison (_release_) à partir de `develop`.
 
 La création de cette branche marque le début du cycle de livraison suivant : 
 * **aucune fonctionnalité supplémentaire ne pourra être ajoutée**
@@ -12,7 +12,7 @@ Une fois qu'elle est prête, la branche `release` est mergée dans la branche `m
 
 ## Utilisation
 
-1. La création de la branche de livraison est basée sur la branche `develop` (comme pour une _feature_). Je crée la branche de la release de la manière suivante :
+1. La création de la branche de livraison est basée sur la branche `develop` (comme pour une _feature_). Je créé la branche de la _release_ de la manière suivante :
 ```sh
 # Sans l'extension git-flow :
 $ git checkout develop
@@ -41,21 +41,20 @@ $ git merge release/1.2.3
 $ git flow release finish '1.2.3'
 ```
 
-5. Une fois fermée, je reviens  sur ma branche locale `master` (qui contient la release)  et je pousse cette branche sur le dépot distant :
+5. Une fois fermée, je reviens  sur ma branche locale `master` (qui contient la _release_)  et je pousse cette branche sur le dépot distant :
 ```sh
-$ git checkout master
 $ git push
 ```
 
-6. Puis je bascule sur ma branche locale `develop` (qui contient aussi la release) eet de la même manière, je pousse cette branche aussi sur le dépot distant :
+6. Puis je bascule sur ma branche locale `develop` (qui contient aussi la _release_) et de la même manière, je pousse cette branche aussi sur le dépot distant :
 ```sh
 $ git checkout develop
 $ git push
 ```
 
 7. Depuis l'interface Git/Gitlab, je contrôle :
-   * que la branche de la release n'existe plus
-   * que les commits de la release apparaissent dans la branche `develop`
-   * que les commits de la release apparaissent dans la branche `master`
+   * que la branche de la _release_ n'existe plus
+   * que les _commit_ de la _release_ apparaissent dans la branche `develop`
+   * que les _commit_ de la _release_ apparaissent dans la branche `master`
 
-8. Pour finir, je [créé le tag de la version que je dois livrer](04-creer-un-tag-de-livraison.md).
+8. Pour finir, je [créé le tag de la version](04-creer-un-tag-de-livraison.md) que je dois livrer.
