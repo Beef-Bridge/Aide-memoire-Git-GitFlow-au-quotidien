@@ -66,7 +66,7 @@ Désormais la branche de mon développement se retrouve fusionnée dans ma branc
 
 >Attention : après avoir fermé ma _feature_, la branche est supprimée donc je suis automatiquement basculé sur ma branche locale `develop`.
 
-Une fois mon développement terminé, je (réalise une version de livraison)[03-preparer-une-release.md].
+Une fois mon développement terminé, je [réalise une version de livraison](03-preparer-une-release.md).
 
 ## Bonus
 * [Récupérer les développements des collègues durant un long développement](02-bonus-1-recuperer-les-developpements-des-collegues.md)
