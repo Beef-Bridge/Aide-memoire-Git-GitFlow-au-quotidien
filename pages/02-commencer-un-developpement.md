@@ -6,7 +6,7 @@ Je commence par m'assurer que ma branche `develop` est correctement à jour sur 
 $ git pull --rebase
 ```
 
-Je poursuis en créant une branche _feature_ depuis `develop` qui me permet d'effectuer mon développement sans perturber cette dernière :
+Je poursuis en créant une branche _feature_ depuis ma locale `develop`, qui me permet d'effectuer mon développement sans perturber cette dernière :
 ```sh
 # Sans l'extension git-flow :
 git checkout develop
@@ -25,7 +25,7 @@ $ git commit -m "#mon_message"
 ...
 ```
 
-Après mon premier commit, je rends publique ma _feature_ en la poussant sur le depot distant :
+Après mon premier commit, je rends publique ma _feature_ en la poussant sur le dépot distant :
 ```sh
 # Avec l'extension git-flow :
 $ git flow feature publish feature_branch
@@ -66,20 +66,7 @@ Désormais la branche de mon développement se retrouve fusionnée dans ma branc
 
 >Attention : après avoir fermé ma _feature_, la branche est supprimée donc je suis automatiquement basculé sur ma branche locale `develop`.
 
-## Bonus
-Si mon développement dure plus longtemps que prévu et que la branche distante `develop` évolue rapidement avec les développements de mes collègues, je peux mettre à jour la branche de ma _feature_ en récupérant leurs travaux.
-
-Pour cela, je me place dans ma branche `develop` et je m'assure bien qu'elle soit à jour :
-```sh
-$ git checkout develop
-$ git pull --rebase
-```
-
-Puis, je retourne dans la branche de ma _feature_ et je récupère les changements fraichement récupérés dans ma branche locale `develop` :
-```sh
-$ git checkout feature_branch
-$ git pull --rebase
-$ git merge origin/develop
-```
-
 Une fois mon développement terminé, je (réalise une version de livraison)[03-preparer-une-release.md].
+
+## Bonus
+* [Récupérer les développements des collègues durant un long développement](02-bonus-1-recuperer-les-developpements-des-collegues.md)
