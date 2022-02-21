@@ -73,7 +73,7 @@ On branch hotfix_avec_un_joli_nom
 Your branch is up to date with 'origin/hotfix_avec_un_joli_nom'.
 ```
 
-8. Je poursuis le développement du hotfix et je répète les étapes 4. 5. 6. 7. autant de fois que nécessaire jusqu'à que son développement soit terminé.
+8. Je poursuis le développement du hotfix et je répète les étapes 4. 5. 6. 7. autant de fois que nécessaire jusqu'à ce que son développement soit terminé.
 
 9. Je bascule sur ma branche locale `master` et je la mets à jour :
 ```sh
