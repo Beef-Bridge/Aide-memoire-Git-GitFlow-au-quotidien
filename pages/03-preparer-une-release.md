@@ -58,4 +58,4 @@ $ git push
    * que les commits de la release apparaissent dans la branche `develop`
    * que les commits de la release apparaissent dans la branche `master`
 
-8. Pour finir, je crée le tag de la version que je dois livrer.
+8. Pour finir, je [créé le tag de la version que je dois livrer](04-creer-un-tag-de-livraison.md).
