@@ -73,6 +73,48 @@ On branch hotfix_avec_un_joli_nom
 Your branch is up to date with 'origin/hotfix_avec_un_joli_nom'.
 ```
 
-8. Je poursuis le développement du hotfix et je répète les étapes 4. 5. 6. 7. autant de fois que nécessaire
+8. Je poursuis le développement du hotfix et je répète les étapes 4. 5. 6. 7. autant de fois que nécessaire jusqu'à que son développement soit terminé.
 
-9. <à venir>
+9. Je bascule sur ma branche locale `master` et je la mets à jour :
+```sh
+$ git checkout master
+$ git pull --rebase
+```
+
+10. Je bascule sur ma branche locale `develop` et je fais de même :
+```sh
+$ git checkout develop
+$ git pull --rebase
+```
+
+11. Puis je place le hotfix dans mes branches locales -à jour- `master` et `develop` :
+```sh
+$ git checkout master
+$ git merge hotfix_avec_un_joli_nom
+
+$ git checkout develop
+$ git merge hotfix_avec_un_joli_nom
+```
+
+Maintenant mes deux branches locales contiennent le hotfix.
+
+12. Je pousse mes deux branches contenant le hotfix sur le dépot distant :
+```sh
+$ git checkout master
+$ git push
+
+$ git checkout develop
+$ git push
+```
+
+Je contrôle ces deux branches sur le dépot distant, pour voir si elles contiennnent bien le hotfix.
+
+13. Commme c'est le cas, je supprime la branche distante du hotfix `origin/hotfix_avec_un_joli_nom` :
+```sh
+$ git push origin --delete hotfix_avec_un_joli_nom
+```
+
+14. Enfin je supprime cette branche sur mon dépot local :
+```sh
+$ git branch -D hotfix_avec_un_joli_nom
+```
