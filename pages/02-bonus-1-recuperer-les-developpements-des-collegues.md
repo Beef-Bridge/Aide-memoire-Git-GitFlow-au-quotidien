@@ -1,4 +1,4 @@
-# Récupérer les développements des collègues durant un long développement
+# Bonus 1 : récupérer les développements des collègues durant un long développement
 
 Si mon développement dure plus longtemps que prévu et que la branche distante `develop` évolue rapidement avec les développements de mes collègues, je peux mettre à jour la branche de ma _feature_ en récupérant leurs travaux.
 
