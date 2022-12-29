@@ -8,9 +8,10 @@ $ git checkout develop
 $ git pull --rebase
 ```
 
-Puis, je retourne dans la branche de ma _feature_ et je récupère les changements fraichement récupérés dans ma branche locale `develop` :
+Puis, je retourne dans la branche de ma _feature_ et je récupère les changements fraichement récupérés de ma branche locale `develop` :
 ```sh
 $ git checkout feature_branch
 $ git pull --rebase
 $ git merge origin/develop
+$ git push
 ```
