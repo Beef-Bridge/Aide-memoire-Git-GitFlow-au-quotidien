@@ -8,7 +8,7 @@ Mon travaille n'est pas dans un état assez avancé pour pouvoir les publier sur
 ```sh
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✘ ✹ ✭
 # Vérification du status de ma branche actuelle
-# J'ai des fichiers modifié/créé encours
+# J'ai des fichiers modifiés/créés encours
 $ git status
 
 # Je créé mon stash qui va capter et mettre de coté tous ses fichiers
@@ -35,7 +35,7 @@ $ git checkout master
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > master ✔
 $ git checkout feature/toto
 
-# Comme je n'ai que un stash disponible, je récupère le seul stash présent
+# Comme je n'ai que un seul stash disponible, je récupère ce stash présent
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✔
 $ git stash pop
 
@@ -49,6 +49,3 @@ $ git status
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✘ ✹ ✭
 $ git stash list
 `````
-
-
-
