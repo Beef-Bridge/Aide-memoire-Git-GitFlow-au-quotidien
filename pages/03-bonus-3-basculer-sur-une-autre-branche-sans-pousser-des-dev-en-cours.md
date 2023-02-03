@@ -8,7 +8,7 @@ Mon travaille n'est pas dans un état assez avancé pour pouvoir les publier sur
 ```sh
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✘ ✹ ✭
 # Vérification du status de ma branche actuelle
-# Je des fichiers modifié/créé encours
+# J'ai des fichiers modifié/créé encours
 $ git status
 
 # Je créé mon stash qui va capter et mettre de coté tous ses fichiers
