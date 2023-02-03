@@ -49,3 +49,6 @@ $ git status
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✘ ✹ ✭
 $ git stash list
 `````
+
+>**Attention :**
+>Si un fichier est modifié, dans la branche sur laquelle je bascule durant mon développement, et que ce fichier est modifié sur ma feature et donc présent dans un stash créé, **je ne sais pas -encore- si cela déclanchera un conflit ou non !!**
