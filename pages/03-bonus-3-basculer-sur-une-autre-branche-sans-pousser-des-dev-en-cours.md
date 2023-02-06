@@ -10,20 +10,34 @@ mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✘ ✹
 # Vérification du status de ma branche actuelle
 # J'ai des fichiers modifiés/créés encours
 $ git status
+On branch feature/feature_toto
+Your branch is up to date with 'origin/develop'.        
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   assets/js/hike/graphs-hikes.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
 
 # Je créé mon stash qui va capter et mettre de coté tous ses fichiers
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✘ ✹ ✭
 $ git stash
-saved working directory
+Saved working directory and index state WIP on feature/feature_toto: 175df9ec feat: [Hike] utilisation graphs-hikes.js
 
 # Contrôle de la bonne création du stash (avec mon travaille)
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✔
 $ git stash list
+stash@{0}: WIP on feature/feature_toto: 175df9ec feat: [Hike] utilisation graphs-hikes.js
 
 # Vérification du status de ma branche actuelle
 # Je n'ai plus aucun fichier modifié/créé encours
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✔
 $ git status
+On branch feature/feature_toto
+Your branch is up to date with 'origin/feature/feature_toto'.
+
+nothing to commit, working tree clean
 
 # Bascule sur ma branche master pour effectuer la tache urgente
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✔
