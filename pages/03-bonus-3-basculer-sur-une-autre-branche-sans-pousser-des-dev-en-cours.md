@@ -42,24 +42,47 @@ nothing to commit, working tree clean
 # Bascule sur ma branche master pour effectuer la tache urgente
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✔
 $ git checkout master
-
+Switched to branch 'master'
+Your branch is up to date with 'master'.
 ...
+$ git push
 
 # Je reviens sur ma feature pour reprendre le cours de mon développement
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > master ✔
-$ git checkout feature/toto
+$ git checkout feature/feature_toto
+Switched to branch 'feature/feature_toto'
+Your branch is up to date with 'origin/feature/feature_toto'.
 
-# Comme je n'ai que un seul stash disponible, je récupère ce stash présent
+# Comme je n'ai créé que un seul stash, je récupère l'unique stash présent
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✔
 $ git stash pop
+On branch feature/feature_toto
+Your branch is up to date with 'origin/feature/feature_toto'.        
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   assets/js/hike/graphs-hikes.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (fe70293a8b5d3e6d50657a3bf33e2432a35be9e8)
 
 # Vérification du status de ma branche actuelle
 # Les fichiers créés/modifiés durant mon développement sont de retour sur ma branche
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✘ ✹ ✭
 $ git status
+On branch feature/feature_toto
+Your branch is up to date with 'origin/feature/feature_toto'.        
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   assets/js/hike/graphs-hikes.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
 
 # Je contrôle la liste des stash présents
-# Mon stash n'est plus présent car il a été utilisé
+# Mon stash n'est plus présent car il a été utilisé et donc supprimé après coup
 mon-poste:bibi$ /Users/bibi/Workspaces/projets/mon-projet > feature_toto ✘ ✹ ✭
 $ git stash list
 `````
