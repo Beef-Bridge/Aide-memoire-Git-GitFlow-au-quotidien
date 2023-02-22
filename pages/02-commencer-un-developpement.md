@@ -28,7 +28,7 @@ $ git commit -m "#mon_message"
 Après mon premier commit, je rends publique ma _feature_ en la poussant sur le dépot distant :
 ```sh
 # Avec l'extension git-flow :
-$ git flow feature publish feature_branch
+$ git flow feature publish users
 ```
 
 Je reprends le cours de mon développement :
@@ -54,10 +54,10 @@ $ git pull --rebase
 
 # Sans l'extension git-flow :
 $ git checkout develop
-$ git merge feature_branch
+$ git merge feature/users
 
 # Avec l'extension git-flow :
-$ git flow feature finish feature_branch
+$ git flow feature finish users
 
 $ git push
 ```
