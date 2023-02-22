@@ -6,14 +6,14 @@ Je commence par m'assurer que ma branche `develop` est correctement à jour sur 
 $ git pull --rebase
 ```
 
-Je poursuis en créant une branche _feature_ depuis ma locale `develop`, qui me permet d'effectuer mon développement sans perturber cette dernière :
+Je poursuis en créant une branche _feature_ (ex: `feature/users`) depuis ma locale `develop`, qui me permet d'effectuer mon développement sans perturber cette dernière :
 ```sh
 # Sans l'extension git-flow :
 git checkout develop
-git checkout -b feature_branch
+git checkout -b feature/users
 
 # Avec l'extension git-flow :
-$ git flow feature start feature_branch develop
+$ git flow feature start users develop
 ```
 
 ## Durant mon développement
@@ -49,7 +49,7 @@ $ git pull --rebase
 
 Puis je re-bascule sur la branche de ma _feature_, et je m'assure que je n'ai plus rien en attente par rapport à Git, puis je la cloture (sans oublier de pousser tout ça) :
 ```sh
-$ git checkout feature_branch
+$ git checkout feature/users
 $ git pull --rebase
 
 # Sans l'extension git-flow :
