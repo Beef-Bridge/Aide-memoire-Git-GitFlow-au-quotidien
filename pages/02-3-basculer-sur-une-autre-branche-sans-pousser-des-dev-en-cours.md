@@ -1,4 +1,4 @@
-# Bonus 3 : Basculer sur une autre branche sans pousser des dev en cours
+# Basculer sur une autre branche sans pousser des dev en cours
 
 Si durant mon développement j'ai besoin, pour une raison ou une autre, de basculer sur une autre branche alors que j'ai des fichiers modifiés non poussés (car ils ne sont pas encore aboutis, par exemple), je peux mettre ces fichiers de coté, en gardant leur états actuels grace à la commande `git stash`.
 

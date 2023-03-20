@@ -1,4 +1,4 @@
-# Bonus 2 : modifier le message du dernier commit effectué (no pushed)
+# Modifier le message du dernier commit effectué (no pushed)
 
 Si à un moment donné, je me rédige une erreur dans le message de mon commit, j'ai la possibilité de changer le message de ce dernier commit.
 
