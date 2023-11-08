@@ -35,7 +35,7 @@ $ git push --set-upstream origin release/1.2.3
 ```sh
 $ git checkout <master|main>
 $ git pull --rebase
-$ git merge release/1.2.3
+$ git merge --no-ff -m "Merge branch 'release/1.2.3'" release/1.2.3
 ```
 
 >**Note** : Il se peut que certains conflits surviennent à la suite de ce _merge_, dans ce cas je les résouds et je termine le _merge_ avec la commande : 
@@ -65,7 +65,7 @@ develop
 
 8. Je _merge_ ma branche `<master|main>` dans ma branche `develop` :
 ```sh
-$ git merge <master|main>
+$ git merge --no-ff -m "Merge branch 'release/1.2.3'" <master|main>
 ```
 
 9. Je pousse le résultat de cette action sur la branche `develop` distante :
