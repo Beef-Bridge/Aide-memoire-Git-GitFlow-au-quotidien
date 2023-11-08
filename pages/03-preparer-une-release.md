@@ -19,13 +19,14 @@ Une fois qu'elle est prête, la branche `release` est mergée dans la branche `<
 1. Je créé la branche de la _release_ à partir de la branche `develop` (comme pour une _feature_) :
 ```sh
 $ git checkout develop
+$ git pull --rebase
 $ git checkout -b release/1.2.3
 ```
 
 2. Dans l'éventualité où des collègues veulent/peuvent participer à la finalisation de la _release_, je la publie :
 ```sh
 $ git commit --allow-empty -m "Release v1.2.3"
-$ git push
+$ git push --set-upstream origin release/1.2.3
 ```
 
 3. Je continue d'ajouter/corriger les éléments prévus pour la livraison correspondante à la présente _release_.
@@ -33,6 +34,7 @@ $ git push
 4. Une fois la branche prête, je combine cette branche avec ma branche locale `<master|main>` :
 ```sh
 $ git checkout <master|main>
+$ git pull --rebase
 $ git merge release/1.2.3
 ```
 
@@ -75,12 +77,12 @@ $ git push -u origin develop
 
 10. Je peux clôturer cette _release_ en la supprimant du dépôt distant :
 ```sh
-$ git push origin --delete releaser/1.2.3
+$ git push origin --delete release/1.2.3
 ```
 
 11. Je la supprime également de mon dépôt local :
 ```sh
-$ git branch -d releaser/1.2.3
+$ git branch -d release/1.2.3
 ```
 
 12. Depuis l'interface Github/Gitlab, je contrôle :
