@@ -65,7 +65,7 @@ develop
 
 8. Je _merge_ ma branche `<master|main>` dans ma branche `develop` :
 ```sh
-$ git merge --no-ff -m "Merge branch 'release/1.2.3'" <master|main>
+$ git merge <master|main>
 ```
 
 9. Je pousse le résultat de cette action sur la branche `develop` distante :
